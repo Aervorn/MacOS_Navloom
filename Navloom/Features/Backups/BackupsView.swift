@@ -1,11 +1,3 @@
-//
-//  BackupsView.swift
-//  Navloom
-//
-//  Created by Aervorn on 30/09/2026.
-//
-
-
 import SwiftUI
 
 struct BackupsView: View {

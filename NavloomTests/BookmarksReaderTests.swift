@@ -1,11 +1,3 @@
-//
-//  BookmarksReaderTests.swift
-//  Navloom
-//
-//  Created by Aervorn on 29/09/2026.
-//
-
-
 import Testing
 import Foundation
 @testable import Navloom
