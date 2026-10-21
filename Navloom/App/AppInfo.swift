@@ -4,11 +4,11 @@ import Foundation
 /// (réglages de la cible : Marketing Version et Build) ; le reste se modifie ici.
 enum AppInfo {
     static let authorName = "Aervorn"
-    static let authorEmail = "57586103+Aervorn@users.noreply.github.com"
 
-    static let repositoryURL = URL(string: "https://github.com/Aervorn/Navloom")!
-    static let newIssueURL = URL(string: "https://github.com/Aervorn/Navloom/issues/new")!
-    static var mailURL: URL { URL(string: "mailto:\(authorEmail)")! }
+    /// Nom du dépôt tel qu'affiché dans « À propos ».
+    static let repositoryName = "Aervorn/MacOS_Navloom"
+    static let repositoryURL = URL(string: "https://github.com/Aervorn/MacOS_Navloom")!
+    static let newIssueURL = URL(string: "https://github.com/Aervorn/MacOS_Navloom/issues/new")!
 
     /// Date de la version courante : à mettre à jour à chaque release.
     static let releaseDate = DateComponents(calendar: .init(identifier: .gregorian),
