@@ -155,6 +155,9 @@ Your permissions (Full Disk Access, Automation) are kept from one version to the
 
 ## 📝 Changelog
 
+### 0.1.1
+- New signing certificate and bundle identifier. **After updating, grant Full Disk Access and Automation again** (System Settings › Privacy & Security; remove the old Navloom entry first if it's still listed). Settings are reset; backups are kept.
+
 ### 0.1.0
 - First public version: FaviconSync, Twins, Ghosts, Echo and Ferry, backups and restore, English and French.
 

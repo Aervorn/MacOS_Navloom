@@ -155,6 +155,9 @@ Tes autorisations (Accès complet au disque, Automatisation) sont conservées d'
 
 ## 📝 Historique des versions
 
+### 0.1.1
+- Nouveau certificat de signature et nouvel identifiant d'app. **Après la mise à jour, redonne l'Accès complet au disque et l'Automatisation** (Réglages Système › Confidentialité et sécurité ; supprime d'abord l'ancienne entrée Navloom si elle apparaît encore). Les réglages sont réinitialisés ; les sauvegardes sont conservées.
+
 ### 0.1.0
 - Première version publique : FaviconSync, Twins, Ghosts, Echo et Ferry, sauvegardes et restauration, français et anglais.
 
