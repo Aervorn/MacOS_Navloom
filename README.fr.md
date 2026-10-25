@@ -23,6 +23,9 @@ Il récupère les favicons manquantes, repère les doublons et les liens morts, 
 
 Navloom fonctionne avec les navigateurs basés sur Chromium (Chrome, Edge, Brave, Vivaldi, Opera…) et existe en français et en anglais.
 
+> [!NOTE]
+> **Développé avec l'aide d'une IA.** Navloom est ma première application macOS, et je ne connaissais ni Swift ni SwiftUI au départ. Je l'ai développé avec Claude, l'assistant IA d'Anthropic : les idées, les choix d'interface et de fonctionnement, les tests de chaque outil sur mes propres navigateurs et la relecture des changements viennent de moi, mais une grande partie du code a été écrite avec l'aide de Claude. Je préfère jouer carte sur table.
+
 ## 📸 Captures d'écran
 
 <p align="center">

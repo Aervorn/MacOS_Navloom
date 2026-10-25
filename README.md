@@ -23,6 +23,9 @@ It brings back missing favicons, finds duplicates and dead links, copies bookmar
 
 Navloom works with Chromium-based browsers (Chrome, Edge, Brave, Vivaldi, Opera…) and is available in English and French.
 
+> [!NOTE]
+> **Built with AI assistance.** Navloom is my first macOS app, and I didn't know Swift or SwiftUI when I started. I wrote it together with Claude, Anthropic's AI assistant: I came up with the ideas, made the design and product decisions, tested every feature on my own browsers and reviewed the changes, while a large part of the code was written with Claude's help. I'd rather be upfront about it.
+
 ## 📸 Screenshots
 
 <p align="center">
