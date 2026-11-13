@@ -2141,12 +2141,32 @@
         }
       }
     },
+    "Automatically check for updates" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechercher automatiquement les mises à jour"
+          }
+        }
+      }
+    },
     "Automatically delete old backups" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer automatiquement les anciennes sauvegardes"
+          }
+        }
+      }
+    },
+    "Automatically download and install updates" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Télécharger et installer automatiquement les mises à jour"
           }
         }
       }
@@ -2377,6 +2397,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tout cocher"
+          }
+        }
+      }
+    },
+    "Check Now" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechercher maintenant"
+          }
+        }
+      }
+    },
+    "Check for Updates…" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechercher les mises à jour…"
           }
         }
       }
@@ -3381,6 +3421,16 @@
         }
       }
     },
+    "Last checked: %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernière recherche : %@"
+          }
+        }
+      }
+    },
     "Later" : {
       "localizations" : {
         "fr" : {
@@ -3547,6 +3597,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Navloom ne sait pas lire l'état de la synchro de %@. Si elle est activée, elle peut défaire la restauration. L'état actuel est sauvegardé automatiquement avant."
+          }
+        }
+      }
+    },
+    "Navloom checks for a new version once a day. Updates are signed: Navloom refuses any file that wasn't signed by its author." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navloom vérifie une fois par jour si une nouvelle version existe. Les mises à jour sont signées : Navloom refuse tout fichier qui n'a pas été signé par son auteur."
           }
         }
       }
@@ -4441,6 +4501,16 @@
         }
       }
     },
+    "Settings…" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres…"
+          }
+        }
+      }
+    },
     "Show" : {
       "localizations" : {
         "fr" : {
@@ -5157,6 +5227,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Identifiant de fenêtre illisible"
+          }
+        }
+      }
+    },
+    "Updates" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mises à jour"
           }
         }
       }

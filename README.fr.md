@@ -129,7 +129,7 @@ Pour accorder l'Accès complet au disque : **Réglages Système › Confidential
 
 ## 🔒 Confidentialité
 
-Navloom ne collecte rien et n'envoie rien à ton sujet. Pas de compte, pas de statistiques, pas de pistage. Les seules requêtes réseau sont celles de FaviconSync et Ghosts, envoyées directement aux sites de tes propres favoris pour récupérer leurs icônes ou vérifier qu'ils répondent. Navloom ne lit que tes favoris, tes icônes et quelques réglages des navigateurs (noms de profils, état de la synchro).
+Navloom ne collecte rien et n'envoie rien à ton sujet. Pas de compte, pas de statistiques, pas de pistage. Les seules requêtes réseau sont celles de FaviconSync et Ghosts, envoyées directement aux sites de tes propres favoris pour récupérer leurs icônes ou vérifier qu'ils répondent, et la recherche quotidienne de mises à jour, qui télécharge seulement la liste des versions depuis GitHub (désactivable dans **Paramètres › Mises à jour**). Navloom ne lit que tes favoris, tes icônes et quelques réglages des navigateurs (noms de profils, état de la synchro).
 
 ## 📥 Installation
 
@@ -152,11 +152,17 @@ Navloom ne collecte rien et n'envoie rien à ton sujet. Pas de compte, pas de st
 
 ## 🔄 Mise à jour
 
-Les mises à jour automatiques arriveront dans une prochaine version. En attendant, télécharge le nouveau DMG depuis la [page des versions](https://github.com/Aervorn/MacOS_Navloom/releases) et remplace l'app dans ton dossier Applications.
+Depuis la version 0.2.0, Navloom se met à jour tout seul : il vérifie une fois par jour si une nouvelle version existe et propose de l'installer (ou utilise **Navloom › Rechercher les mises à jour…**). Les mises à jour sont signées, et Navloom refuse tout fichier qui n'a pas été signé par l'auteur. La recherche et l'installation automatiques se désactivent dans **Paramètres › Mises à jour**.
+
+Tu viens d'une 0.1.x ? Télécharge une dernière fois le nouveau DMG depuis la [page des versions](https://github.com/Aervorn/MacOS_Navloom/releases) et remplace l'app dans ton dossier Applications.
 
 Tes autorisations (Accès complet au disque, Automatisation) sont conservées d'une version à l'autre, car chaque version est signée avec le même certificat. Tes réglages et tes sauvegardes aussi.
 
 ## 📝 Historique des versions
+
+### 0.2.0
+- Mises à jour automatiques avec [Sparkle](https://sparkle-project.org) : Navloom vérifie une fois par jour si une nouvelle version existe et propose de l'installer (**Navloom › Rechercher les mises à jour…**, options dans **Paramètres › Mises à jour**).
+- **⌘,** ouvre maintenant les Paramètres.
 
 ### 0.1.1
 - Nouveau certificat de signature et nouvel identifiant d'app. **Après la mise à jour, redonne l'Accès complet au disque et l'Automatisation** (Réglages Système › Confidentialité et sécurité ; supprime d'abord l'ancienne entrée Navloom si elle apparaît encore). Les réglages sont réinitialisés ; les sauvegardes sont conservées.
@@ -178,7 +184,7 @@ Choisis le schéma **Navloom** et **My Mac**, puis **Product › Run** (⌘R). L
 
 Le projet est signé avec le certificat de l'auteur, que tu n'as pas : dans les **Build Settings** de la cible, mets **Code Signing Identity** sur **Sign to Run Locally** (ou sur ton propre certificat).
 
-Pour fabriquer un DMG comme ceux publiés, `scripts/make-dmg.sh` archive l'app, vérifie sa signature et crée l'image disque. Il demande [create-dmg](https://github.com/create-dmg/create-dmg) (`brew install create-dmg`) et un certificat de signature, dont le nom se règle en haut du script.
+Pour fabriquer un DMG comme ceux publiés, `scripts/make-dmg.sh` archive l'app, vérifie sa signature et crée l'image disque. Il demande [create-dmg](https://github.com/create-dmg/create-dmg) (`brew install create-dmg`) et un certificat de signature, dont le nom se règle en haut du script. Il signe aussi le DMG pour Sparkle et réécrit `appcast.xml`, ce qui demande la clé EdDSA mise en place une fois par `scripts/sparkle-keys.sh` (la clé privée reste dans ton trousseau).
 
 ## 🤝 Contribuer et signaler un problème
 

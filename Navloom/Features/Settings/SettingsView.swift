@@ -32,6 +32,8 @@ struct SettingsView: View {
                 Text("“System” follows the macOS setting. The other two force the appearance, whatever that setting is.")
             }
 
+            UpdateSettingsSection()
+
             Section {
                 LabeledContent("Backup location") {
                     VStack(alignment: .trailing, spacing: 8) {

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Fusionné avec l'Info.plist généré par Xcode (GENERATE_INFOPLIST_FILE) : seulement les clés
+	     qu'Xcode ne sait pas produire lui-même. -->
+	<!-- Mises à jour Sparkle : flux des versions et clé publique EdDSA (scripts/sparkle-keys.sh) -->
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/Aervorn/MacOS_Navloom/main/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>eZCHe74IeZ8DBTAY+tVftTLA2+kKJT3xD5e/QmhV2sE=</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUScheduledCheckInterval</key>
+	<integer>86400</integer>
+</dict>
+</plist>

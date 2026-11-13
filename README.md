@@ -129,7 +129,7 @@ To grant Full Disk Access: **System Settings › Privacy & Security › Full Dis
 
 ## 🔒 Privacy
 
-Navloom collects nothing and sends nothing about you. There is no account, no analytics and no tracking. The only network requests are those of FaviconSync and Ghosts, sent directly to the websites of your own bookmarks to fetch their icons or check that they respond. Navloom only reads your bookmarks, your icons and a few browser settings (profile names, sync status).
+Navloom collects nothing and sends nothing about you. There is no account, no analytics and no tracking. The only network requests are those of FaviconSync and Ghosts, sent directly to the websites of your own bookmarks to fetch their icons or check that they respond, and the daily update check, which only downloads the list of versions from GitHub (it can be turned off in **Settings › Updates**). Navloom only reads your bookmarks, your icons and a few browser settings (profile names, sync status).
 
 ## 📥 Installation
 
@@ -152,11 +152,17 @@ Navloom collects nothing and sends nothing about you. There is no account, no an
 
 ## 🔄 Updating
 
-Automatic updates will come in a future version. In the meantime, download the new DMG from the [releases page](https://github.com/Aervorn/MacOS_Navloom/releases) and replace the app in your Applications folder.
+Since version 0.2.0, Navloom updates itself: it checks for a new version once a day and offers to install it (or use **Navloom › Check for Updates…**). Updates are signed, and Navloom refuses any file that wasn't signed by the author. Automatic checking and installing can be turned off in **Settings › Updates**.
+
+Coming from 0.1.x? Download the new DMG from the [releases page](https://github.com/Aervorn/MacOS_Navloom/releases) one last time and replace the app in your Applications folder.
 
 Your permissions (Full Disk Access, Automation) are kept from one version to the next, because every version is signed with the same certificate. Your settings and backups are kept too.
 
 ## 📝 Changelog
+
+### 0.2.0
+- Automatic updates with [Sparkle](https://sparkle-project.org): Navloom checks for a new version once a day and offers to install it (**Navloom › Check for Updates…**, options in **Settings › Updates**).
+- **⌘,** now opens the Settings.
 
 ### 0.1.1
 - New signing certificate and bundle identifier. **After updating, grant Full Disk Access and Automation again** (System Settings › Privacy & Security; remove the old Navloom entry first if it's still listed). Settings are reset; backups are kept.
@@ -178,7 +184,7 @@ Choose the **Navloom** scheme and **My Mac**, then **Product › Run** (⌘R). T
 
 The project is signed with the author's certificate, which you don't have: in the target's **Build Settings**, set **Code Signing Identity** to **Sign to Run Locally** (or to your own certificate).
 
-To build a DMG like the published ones, `scripts/make-dmg.sh` archives the app, checks its signature and creates the disk image. It needs [create-dmg](https://github.com/create-dmg/create-dmg) (`brew install create-dmg`) and a signing certificate, whose name is set at the top of the script.
+To build a DMG like the published ones, `scripts/make-dmg.sh` archives the app, checks its signature and creates the disk image. It needs [create-dmg](https://github.com/create-dmg/create-dmg) (`brew install create-dmg`) and a signing certificate, whose name is set at the top of the script. It also signs the DMG for Sparkle and rewrites `appcast.xml`, which needs the EdDSA key set up once by `scripts/sparkle-keys.sh` (the private key stays in your keychain).
 
 ## 🤝 Contributing & issues
 

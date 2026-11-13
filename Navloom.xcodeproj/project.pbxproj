@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5A0C1E0130A0000100A1B2C3 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0C1E0330A0000100A1B2C3 /* Sparkle */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		15EC89FE306C471700875C4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -51,6 +55,7 @@
 		15EC89ED306C471600875C4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				5A0C1E0130A0000100A1B2C3 /* Sparkle in Frameworks */,
 			);
 		};
 		15EC89FA306C471700875C4A /* Frameworks */ = {
@@ -103,6 +108,9 @@
 				15EC89F2306C471600875C4A /* Navloom */,
 			);
 			name = Navloom;
+			packageProductDependencies = (
+				5A0C1E0330A0000100A1B2C3 /* Sparkle */,
+			);
 			productName = Navloom;
 			productReference = 15EC89F0306C471600875C4A /* Navloom.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +190,9 @@
 			);
 			mainGroup = 15EC89E7306C471600875C4A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5A0C1E0230A0000100A1B2C3 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 15EC89F1306C471600875C4A /* Products */;
 			projectDirPath = "";
@@ -374,12 +385,13 @@
 				CODE_SIGN_IDENTITY = "Aervorn Code Signing";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Support/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Navloom accesses the open tabs of your browsers to display them and transfer them with Ferry.";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Navloom checks the bookmarks that point to devices on your local network (router, NAS…), to fetch their icons or check that they respond.";
@@ -389,7 +401,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.aervorn.Navloom";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -411,12 +423,13 @@
 				CODE_SIGN_IDENTITY = "Aervorn Code Signing";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Support/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Navloom accesses the open tabs of your browsers to display them and transfer them with Ferry.";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Navloom checks the bookmarks that point to devices on your local network (router, NAS…), to fetch their icons or check that they respond.";
@@ -426,7 +439,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.aervorn.Navloom";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -556,6 +569,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A0C1E0230A0000100A1B2C3 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A0C1E0330A0000100A1B2C3 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0C1E0230A0000100A1B2C3 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15EC89E8306C471600875C4A /* Project object */;
 	validationLevel = 1;

@@ -21,6 +21,14 @@ struct MainView: View {
         }
         .frame(minWidth: 760, minHeight: 480)
         .diskAccessAlert()
+        // ⌘, (menu de l'app) agit sur la barre latérale de la fenêtre active
+        .focusedSceneValue(\.selectedFeature, $selection)
+        .onAppear {
+            if let pending = PendingNavigation.feature {
+                selection = pending
+                PendingNavigation.feature = nil
+            }
+        }
     }
 
     // MARK: - Barre latérale
