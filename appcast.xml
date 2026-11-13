@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Navloom</title>
+    <link>https://github.com/Aervorn/MacOS_Navloom</link>
+    <item>
+      <title>Navloom 0.2.0</title>
+      <pubDate>Fri, 13 Nov 2026 08:46:41 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+      <description><![CDATA[<ul><li>Automatic updates with <a href="https://sparkle-project.org">Sparkle</a>: Navloom checks for a new version once a day and offers to install it (<b>Navloom › Check for Updates…</b>, options in <b>Settings › Updates</b>).</li>
+<li><b>⌘,</b> now opens the Settings.</li></ul>]]></description>
+      <description xml:lang="fr"><![CDATA[<ul><li>Mises à jour automatiques avec <a href="https://sparkle-project.org">Sparkle</a> : Navloom vérifie une fois par jour si une nouvelle version existe et propose de l'installer (<b>Navloom › Rechercher les mises à jour…</b>, options dans <b>Paramètres › Mises à jour</b>).</li>
+<li><b>⌘,</b> ouvre maintenant les Paramètres.</li></ul>]]></description>
+      <enclosure url="https://github.com/Aervorn/MacOS_Navloom/releases/download/v0.2.0/Navloom-0.2.0.dmg" type="application/octet-stream" sparkle:edSignature="Kz96vYXIRKHs8ijhe+rNm7cN8hzR3+naxiIIri+crbm67LuVKINQwfl7IxZrpXs+0HjkCxB2eyek8DhzeRfxCQ==" length="2760718" />
+    </item>
+  </channel>
+</rss>
